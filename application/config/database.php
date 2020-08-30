@@ -14,10 +14,10 @@ if ($_SERVER['HTTP_HOST'] == 'localhost') {
 
     
 } else {
-    $hostname = 'localhost';
-    $username = 'root';
-    $password = 'Strategy123';
-    $database = 'tnpsc_career';
+   $hostname = 'localhost';
+    $username = 'tnpsccar_root';
+    $password = 'Password!23';
+    $database = 'tnpsccar_tnpsc_career';
     $environment = 'production';
 }
 $db['default'] = array(
