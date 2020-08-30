@@ -1,3 +1,4 @@
+
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
@@ -10,7 +11,7 @@ if ($_SERVER['HTTP_HOST'] == 'localhost') {
     $username = 'root';
     $password = '';
     $database = 'tnpsc_career1';
-    $environment = 'development';
+    $environment = 'production';
 
     
 } else {
