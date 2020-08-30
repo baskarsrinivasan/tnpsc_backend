@@ -1,0 +1,14 @@
+INSERT INTO `users` (`user_id`, `first_name`, `last_name`, `username`, `email`, `auth_level`, `banned`, `passwd`, `profile_pic`, `passwd_modified_at`, `last_login`, `created_at`, `mobile`, `logged_in_via`) VALUES ('3315147545', '', '', 'superadmin', 'info@cobonat.ae', '9', '0', '$2y$11$0g3qfiVq9y/9ixf/hM4Gv.zHNC0YSgHo3ikxxc1HJpSgzYxRVTNg.', NULL, NULL, NULL, '2020-07-16 20:26:35', '', '');
+
+ALTER TABLE `m_countries` CHANGE `created_date` `created_date` VARCHAR(255) NOT NULL;
+ALTER TABLE `m_regions` CHANGE `created_date` `created_date` DATETIME NOT NULL;
+ALTER TABLE `m_regions` CHANGE `created_date` `r_created_date` DATETIME NOT NULL;
+ALTER TABLE `m_regions` CHANGE `is_active` `r_is_active` TINYINT(1) NOT NULL DEFAULT '1';
+ALTER TABLE `m_regions` CHANGE `r_created_date` `r_created_date` VARCHAR(255) NOT NULL;
+ALTER TABLE `m_regions` ADD `r_created_date` VARCHAR(255) NOT NULL AFTER `r_is_active`;
+
+ALTER TABLE `m_cuisines` ADD `created_at` VARCHAR(255) NOT NULL AFTER `created_date`;
+ALTER TABLE `blog_images` CHANGE `is_active` `b_is_active` INT(11) NOT NULL DEFAULT '1';
+ALTER TABLE `m_positions` ADD `created_at` VARCHAR(255) NOT NULL AFTER `created_date`;
+ALTER TABLE `m_song_types` CHANGE `created_date` `created_date` DATETIME NOT NULL;
+ALTER TABLE `m_song_types` ADD `created_at` VARCHAR(255) NOT NULL AFTER `created_date`;

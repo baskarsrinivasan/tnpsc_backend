@@ -1,0 +1,24 @@
+.bg-primary {
+    background-color: #0000ea !important;
+}
+
+.btn-primary {
+    color: #fff !important;
+    background-color: #0000ea !important;
+    border-color: #0000ea !important;
+}
+
+body[data-sidebar=dark] .navbar-brand-box {
+    background-color: #0000ea !important;
+}
+
+.page-item.active .page-link {
+    z-index: 3;
+    color: #fff;
+    background-color: #0000ea !important;
+    border-color: #0000ea !important;
+}
+span.mandatory {
+    color: red;
+    padding-left: 4px;
+}
