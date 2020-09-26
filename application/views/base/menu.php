@@ -17,6 +17,21 @@ $u2 = $this->uri->segment(2);
                         <span>Dashboard</span>
                     </a>
                 </li>
+               
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow waves-effect">
+                        <i class="ti-user"></i>
+                        <span>Company Settings</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="<?php echo base_url(); ?>company_settings/company_settings">Company Settings</a></li>
+                        <li><a href="<?php echo base_url(); ?>settings/social_media">Social Media Settings</a></li>
+                        
+                       
+                       
+                    </ul>
+
+                </li>
                 <li>
                     <a href="javascript: void(0);" class="has-arrow waves-effect">
                         <i class="ti-user"></i>

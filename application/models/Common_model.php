@@ -604,5 +604,16 @@ class Common_model extends CI_Model
         $result = $query->result();
         return $result;
 	}
+	public function getsocialMedia($id)
+    {
+        $this->db->select('*');
+        $this->db->from('social_media_link as c');
+        // $this->db->join('m_song_types_translation as t','t.song_type_id = c.s_id');
+        $this->db->where('c.sml_id', $id);
+        $this->db->order_by("c.sml_id", "asc");
+        $query = $this->db->get();
+        $result = $query->result();
+        return $result;
+    }
 
 }
