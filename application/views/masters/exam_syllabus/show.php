@@ -146,7 +146,7 @@ function update_status(id) {
     }).then(isConfirmed => {
         if (isConfirmed.value) {
             $.ajax({
-                url: "<?php echo base_url(); ?>masters/exams/change_status/" + id + "/",
+                url: "<?php echo base_url(); ?>masters/exam_syllabus/change_status/" + id + "/",
                 success: function(result) {
                     if (result) {
                         window.location('masters/exams');
