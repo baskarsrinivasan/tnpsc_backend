@@ -113,10 +113,10 @@ function delete_item(id) {
     }).then(isConfirmed => {
         if (isConfirmed.value) {
             $.ajax({
-                url: "<?php echo base_url(); ?>masters/exams/delete/" + id + "/",
+                url: "<?php echo base_url(); ?>masters/exam_currentaffairs/delete/" + id + "/",
                 success: function(result) {
                     if (result) {
-                        window.location('masters/exams/');
+                        window.location('masters/exam_currentaffairs/');
                     }
                 }
             });

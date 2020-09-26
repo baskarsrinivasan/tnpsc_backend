@@ -113,7 +113,7 @@ function delete_item(id) {
     }).then(isConfirmed => {
         if (isConfirmed.value) {
             $.ajax({
-                url: "<?php echo base_url(); ?>masters/exams/delete/" + id + "/",
+                url: "<?php echo base_url(); ?>masters/exam_notification/delete/" + id + "/",
                 success: function(result) {
                     if (result) {
                         window.location('masters/exams/');

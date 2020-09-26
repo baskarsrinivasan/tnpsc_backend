@@ -29,7 +29,13 @@ class Exams extends MY_Controller
             
             $this->db->order_by("c.id","desc");
         $this->datatables->add_column('action', '<a class="btn btn-primary btn-sm" href="' . base_url() . 'masters/exams/edit/$1"><i class="fas fa-edit"></i></a> &nbsp; 
-        &nbsp;
+        &nbsp;<a
+        class="btn btn-info btn-sm"
+        href="javascript:void(0);"
+        onclick="update_status($1)"
+        title="Change Status">
+        <i class="fas fa-share"></i> Delete &nbsp;
+    </a>
         <a
         class="btn btn-info btn-sm"
         href="javascript:void(0);"

@@ -36,7 +36,13 @@ class Exam_currentaffairs extends MY_Controller
             title="View">
             <i class="ti-eye"></i>
             </a>
-        &nbsp;&nbsp;
+        &nbsp;&nbsp; <a
+        class="btn btn-danger btn-sm"
+        href="javascript:void(0);"
+        onclick="delete_item($1)"
+        title="Change Status">
+        <i class="fas fa-trase"></i> Delete
+    </a> &nbsp;&nbsp;
         <a
         class="btn btn-info btn-sm"
         href="javascript:void(0);"
@@ -258,7 +264,7 @@ class Exam_currentaffairs extends MY_Controller
 
     public function delete($id)
     {
-        $delete = $this->mcommon->common_delete('m_countries', array('c_id' => $id));
+        $delete = $this->mcommon->common_delete('exam_currentaffairs', array('id' => $id));
        
         return $delete;
 
