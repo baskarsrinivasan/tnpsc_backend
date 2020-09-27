@@ -63,11 +63,13 @@ class Exam_currentaffairs extends MY_Controller
             $exam_id= $this->input->post('exam_id');            
             $exam_currentaffairs_name = $this->input->post('exam_currentaffairs_name');            
             $exam_currentaffairs_des = $this->input->post('exam_currentaffairs_des');            
+            $date = $this->input->post('date');            
                      
             //Set validation Rules
             $this->form_validation->set_rules('exam_id', 'exam_id', 'required');
             $this->form_validation->set_rules('exam_currentaffairs_name', 'exam_currentaffairs Name', 'required');
             $this->form_validation->set_rules('exam_currentaffairs_des', 'exam_currentaffairs Description', 'required');
+            $this->form_validation->set_rules('date', 'Date', 'required');
             //check is the validation returns no error
             if ($this->form_validation->run() == true) {  
              if ($_FILES['user_file']['name']) {
@@ -118,6 +120,7 @@ class Exam_currentaffairs extends MY_Controller
                         'exam_currentaffairs_des' => $exam_currentaffairs_des,  
                         'image' => $cover_pic, 
                         'document' => $cover_pic1,   
+                        'date' => $date,   
                         'is_active'  =>'1'                
                         
                     );
@@ -133,6 +136,7 @@ class Exam_currentaffairs extends MY_Controller
 
                 if ($insert > '0') {
                     $this->session->set_flashdata('alert_success', 'exam_currentaffairs added successfully!');
+                    redirect('masters/exam_currentaffairs/');
                 } else {
                     $this->session->set_flashdata('alert_danger', 'Something went wrong. Please try again later');
                 }

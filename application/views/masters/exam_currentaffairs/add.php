@@ -93,7 +93,7 @@ if (validation_errors()) {
                     </div>
 <div class="col-lg-6">
                     <div class="form-group">
-                        <label>Notification Name</label><span class="mandatory">*</span>
+                        <label>Currentaffairs Name</label><span class="mandatory">*</span>
                         <input name="exam_currentaffairs_name" id="Exam" type="text" class="form-control" placeholder="Enter Exam Name"
                             required>
                         <?php if (form_error('exam_currentaffairs_name')) {?>
@@ -109,7 +109,7 @@ if (validation_errors()) {
                 </div>
                     <div class="col-lg-6">
                     <div class="form-group">
-                        <label>Notification Description</label><span class="mandatory">*</span>
+                        <label>Currentaffairs Description</label><span class="mandatory">*</span>
                         <textarea name="exam_currentaffairs_des" id="description" rows="4" cols="50" class="form-control summernote"
                             placeholder="Enter Description"></textarea>
                        
@@ -125,9 +125,17 @@ if (validation_errors()) {
                     </div>
                     <div class="col-lg-6">
                     <div class="form-group">
+                        <label>Date</label><span class="mandatory">*</span>
+                        <input name="date" id="exam_currentaffairs_des" type="date" class="form-control" placeholder="Date"
+                            required>
+                       
+                    </div>
+                    </div>
+                    <div class="col-lg-6">
+                    <div class="form-group">
                         <label>Exam Image Upload</label><span class="mandatory">*</span>
                         <input name="user_file" id="exam_currentaffairs_des" type="file" class="form-control" placeholder="Exam Description"
-                            required>
+                            >
                        
                     </div>
                     </div>
@@ -135,7 +143,7 @@ if (validation_errors()) {
                     <div class="form-group">
                         <label>Exam Document Upload</label><span class="mandatory">*</span>
                         <input name="user_file1" id="exam_currentaffairs_des" type="file" class="form-control" placeholder="Exam Description"
-                            required>
+                            >
                        
                     </div>
                     </div>
