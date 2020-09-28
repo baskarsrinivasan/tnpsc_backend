@@ -123,7 +123,14 @@ if (validation_errors()) {
                         </div>
                         <?php }?>
                     </div>
-                     
+                     <div class="col-lg-6">
+                    <div class="form-group">
+                        <label>Date</label><span class="mandatory">*</span>
+                        <input name="date" id="exam_currentaffairs_des" type="date" class="form-control" placeholder="Date" value="<?php echo $default['date']; ?>"
+                            required>
+                       
+                    </div>
+                    </div>
                     <div class="form-group">
                         <label>Exam Image Upload</label><span class="mandatory">*</span>
                         <input name="user_file" id="exam_currentaffairs_des" type="file" class="form-control" placeholder="Exam Description"
