@@ -127,7 +127,7 @@ if (validation_errors()) {
                     <div class="form-group">
                         <label>Exam Image Upload</label><span class="mandatory">*</span>
                         <input name="user_file" id="exam_questions_des" type="file" class="form-control" placeholder="Exam Description"
-                            required>
+                            >
                        
                     </div>
                     </div>
