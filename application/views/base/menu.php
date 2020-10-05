@@ -38,10 +38,13 @@ $u2 = $this->uri->segment(2);
                         <span>Master</span>
                     </a>
                     <ul class="sub-menu" aria-expanded="false">
+                         <li><a href="<?php echo base_url(); ?>masters/advertising">Advertising</a></li>
                         <li><a href="<?php echo base_url(); ?>masters/exams">Exams</a></li>
                         <li><a href="<?php echo base_url(); ?>masters/exam_syllabus">Exam Syllabus</a></li>
                         <li><a href="<?php echo base_url(); ?>masters/exam_notification">Exam Notification</a></li>
                         <li><a href="<?php echo base_url(); ?>masters/exam_currentaffairs">Exam Currentaffairs</a></li>
+                        <li><a href="<?php echo base_url(); ?>masters/exam_study_material">Exam Study Material</a></li>
+                        <li><a href="<?php echo base_url(); ?>masters/exam_questions">Exam Questions Papers</a></li>
                        <!--  <li><a href="<?php echo base_url(); ?>masters/language">Manage languages</a></li>
                         <li><a href="<?php echo base_url(); ?>masters/company">Company</a></li>
                         <li><a href="<?php echo base_url(); ?>masters/department">Departments</a></li>
