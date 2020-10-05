@@ -126,16 +126,14 @@ if (validation_errors()) {
                     <div class="col-lg-6">
                     <div class="form-group">
                         <label>Exam Image Upload</label><span class="mandatory">*</span>
-                        <input name="user_file" id="exam_syllabus_des" type="file" class="form-control" placeholder="Exam Description"
-                            required>
+                        <input name="user_file" id="exam_syllabus_des" type="file" class="form-control" placeholder="Exam Description">
                        
                     </div>
                     </div>
                     <div class="col-lg-6">
                     <div class="form-group">
                         <label>Exam Document Upload</label><span class="mandatory">*</span>
-                        <input name="user_file1" id="exam_syllabus_des" type="file" class="form-control" placeholder="Exam Description"
-                            required>
+                        <input name="user_file1" id="exam_syllabus_des" type="file" class="form-control" placeholder="Exam Description">
                        
                     </div>
                     </div>
