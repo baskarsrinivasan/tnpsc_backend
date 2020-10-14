@@ -114,14 +114,7 @@ if (validation_errors()) {
                         <textarea name="exam_currentaffairs_des" id="description" rows="4" cols="50" class="form-control summernote"
                             placeholder="Enter Description"><?php echo $default['exam_currentaffairs_des']; ?></textarea>
                        
-                        <?php if (form_error('exam_currentaffairs_des')) {?>
-                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                <span aria-hidden="true">×</span>
-                            </button>
-                            <?php echo form_error('exam_currentaffairs_des'); ?>
-                        </div>
-                        <?php }?>
+                        
                     </div>
                      <div class="col-lg-6">
                     <div class="form-group">
