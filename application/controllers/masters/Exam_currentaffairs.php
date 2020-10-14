@@ -68,7 +68,7 @@ class Exam_currentaffairs extends MY_Controller
             //Set validation Rules
             $this->form_validation->set_rules('exam_id', 'exam_id', 'required');
             $this->form_validation->set_rules('exam_currentaffairs_name', 'exam_currentaffairs Name', 'required');
-            $this->form_validation->set_rules('exam_currentaffairs_des', 'exam_currentaffairs Description', 'required');
+           
             $this->form_validation->set_rules('date', 'Date', 'required');
             //check is the validation returns no error
             if ($this->form_validation->run() == true) {  
@@ -162,7 +162,7 @@ class Exam_currentaffairs extends MY_Controller
             //Set validation Rules
             $this->form_validation->set_rules('exam_id', 'exam_id', 'required');
             $this->form_validation->set_rules('exam_currentaffairs_name', 'exam_currentaffairs Name', 'required');
-            $this->form_validation->set_rules('exam_currentaffairs_des', 'exam_currentaffairs Description', 'required');
+          
             //check is the validation returns no error
             if ($this->form_validation->run() == true) {
                  if (($_FILES['user_file']['name'])!='') {
