@@ -113,15 +113,7 @@ if (validation_errors()) {
                         <label>Currentaffairs Answer</label><span class="mandatory">*</span>
                         <textarea name="exam_currentaffairs_des" id="description" rows="4" cols="50" class="form-control summernote"
                             placeholder="Currentaffairs Answer" ></textarea>
-                       
-                        <?php if (form_error('exam_currentaffairs_des')) {?>
-                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                <span aria-hidden="true">×</span>
-                            </button>
-                            <?php echo form_error('exam_currentaffairs_des'); ?>
-                        </div>
-                        <?php }?>
+                      
                     </div>
                     </div>
                     <div class="col-lg-6">
